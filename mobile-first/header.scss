@@ -1,0 +1,31 @@
+@use 'fonts' as fonts;
+
+$color:  var(--font-color, black);
+
+header {
+    color: $color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color, green);
+    div {
+        font-size: fonts.$font-size-medium;
+    }
+
+    ul {
+        color: $color;
+        display: flex;
+        align-items: center;
+
+        li {
+            list-style: none;
+            margin-left: 1rem;
+        }
+    }
+
+    .avatar {
+        padding: 30px;
+        border-radius: 50%;
+        background-color: $color;
+    }
+}   

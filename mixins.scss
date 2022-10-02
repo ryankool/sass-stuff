@@ -1,0 +1,6 @@
+$font-large: 20rem;
+
+@mixin myAwesomeMixin($color: blue) {
+    font-size: $font-large;
+    color: $color;
+}

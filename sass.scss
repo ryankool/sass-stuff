@@ -1,0 +1,8 @@
+@use 'mixins' as core;
+
+h1 {
+   @include core.myAwesomeMixin(#00f);
+   font-size: 10rem;
+}
+
+

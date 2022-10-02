@@ -1,0 +1,73 @@
+@use 'fonts' as fonts;
+@use 'header';
+
+*{
+    font-family: fonts.$font-family;
+    font-size: fonts.$font-size-medium;
+}
+
+
+body {
+    padding: 1rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    width: 20%;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        li {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+            padding: 5px 10px;
+            background-color: lightgrey;
+            border-radius: 5px;
+        }
+    }
+}
+
+.content {
+    width: 40%;
+}
+
+aside {
+    width: 20%;
+
+    img {
+        width: 100%;
+    }
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: darkgrey;
+}
+
+ @media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    
+    nav,
+    .content,
+    aside {
+        width: 100%;
+    }
+    .content {
+        margin-bottom: 2rem;
+    }
+}

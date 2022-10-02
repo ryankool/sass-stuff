@@ -1,0 +1,29 @@
+@use 'fonts' as fonts;
+
+$mysassvariable: var(--color-background-blue, lightblue);
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $mysassvariable;
+    div {
+        font-size: fonts.$font-size-header;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            list-style: none;
+            margin-left: 1rem;
+        }
+    }
+
+    .avatar {
+        padding: 30px;
+        border-radius: 50%;
+        background-color: $mysassvariable;
+    }
+}   

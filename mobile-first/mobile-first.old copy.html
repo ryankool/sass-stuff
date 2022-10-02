@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>logo</div>
+        <ul>
+            <li class="avatar">
+		hallo dit is een merge conflict           
+	    </li>
+            <li>
+                logout
+            </li>
+        </ul>
+        <button id='mybutton'>switch to dark mode</button>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    first nav item
+                </li>
+                <li>
+                    second nav item
+                </li>
+                <li>
+                    third nav item
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <aside>
+            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" />
+        </aside>
+    </main>
+
+    <footer>
+        <p>
+            contact me at ryan.kool@CoolWebsites.com
+        </p>
+    </footer>
+
+    <script>
+        const mybutton = document.getElementById('mybutton');
+        const head = document.getElementsByTagName('head')[0]; 
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './darkmode.css';
+        link.media = 'all';
+        dark = false;
+        mybutton.addEventListener('click', ()=>{
+            if (dark){
+                head.removeChild(link);
+                dark = false;
+            } else {
+                head.appendChild(link);
+                dark = true;
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+header {
+  color: var(--font-color, black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color, green);
+}
+header div {
+  font-size: 1rem;
+}
+header ul {
+  color: var(--font-color, black);
+  display: flex;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 1rem;
+}
+header .avatar {
+  padding: 30px;
+  border-radius: 50%;
+  background-color: var(--font-color, black);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 20%;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+.content {
+  width: 40%;
+}
+
+aside {
+  width: 20%;
+}
+aside img {
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: darkgrey;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav,
+.content,
+aside {
+    width: 100%;
+  }
+
+  .content {
+    margin-bottom: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
